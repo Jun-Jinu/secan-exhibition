@@ -32,7 +32,7 @@ const NotFound = () => {
         <Link to="/info/exhibition" className="nav-button exhibition-button">
           전시 정보 보기
         </Link>
-        <Link to="/animation/graduation" className="nav-button works-button">
+        <Link to="/comics/graduation" className="nav-button works-button">
           작품 구경하기
         </Link>
       </div>
