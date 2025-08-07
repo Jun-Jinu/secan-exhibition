@@ -1,12 +1,199 @@
-# React + Vite
+# 🏪 2025 SECAN EXHIBITION - 세칸편의점
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📖 서비스 개요
 
-Currently, two official plugins are available:
+**2025 SECAN EXHIBITION**은 세종대학교 만화애니메이션텍 학과의 졸업/과제작품 전시회를 위한 특별한 웹 플랫폼입니다.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔗 페이지 링크
 
-## Expanding the ESLint configuration
+- **메인 페이지**: [세칸편의점 바로가기](https://secan-exhibition.com)
+- **전시 정보**: [전시 안내 및 오시는 길](https://secan-exhibition.com/info/exhibition)
+- **작품 갤러리**:
+  - [애니메이션 작품](https://secan-exhibition.com/animation/graduation)
+  - [만화 작품](https://secan-exhibition.com/comics/graduation)
+  - [아트워크 작품](https://secan-exhibition.com/artwork/graduation)
+- **스태프**: [준비위원회 소개](https://secan-exhibition.com/info/staff)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 🎯 컨셉: "세칸편의점"
+
+- **편의점 테마**: 일반적인 전시회와는 다른, 친근하고 접근하기 쉬운 "편의점" 컨셉
+- **작품 진열**: 편의점에서 상품을 진열하듯 창작 작품들을 전시
+- **알바생 쭈비**: 편의점을 운영하는 강아지 캐릭터 '쭈비'가 방문자들을 안내
+
+![편의점 컨셉 이미지](/public/images/detail_background_image.png)
+
+### 🎨 전시회 정보
+
+- **기간**: 2025.10.20 - 10.27
+- **장소**: 세종대학교 광개토관 지하1층 세종뮤지엄갤러리3관
+- **운영시간**:
+  - 평일: 11:00 - 20:30
+  - 주말: 13:00 - 20:30
+- **상영회**: 세종대학교 대양홀 및 학생회관 대공연장
+
+## 🌟 주요 기능
+
+### 🏠 홈페이지
+
+- 전시회 메인 정보 및 일정 안내
+- 반응형 디자인으로 모바일 최적화
+- 캐릭터 '쭈비'와 함께하는 친근한 인터페이스
+
+### 📱 작품 갤러리
+
+**3개 카테고리별 작품 전시**
+
+- **ANIMATION** - 애니메이션 작품
+- **COMICS** - 만화 작품
+- **ARTWORK** - 일러스트 및 아트워크 작품
+
+**작품 분류**
+
+- **졸업작품**: 4학년 졸업생들의 완성작
+- **과제작품**: 재학생들의 수업 과제물
+
+![작품 갤러리 이미지](<!-- 갤러리 스크린샷 추가 필요: public/images/gallery-screenshot.png -->)
+
+### 📋 정보 페이지
+
+- **전시 정보**: 편의점 컨셉 스토리 및 오시는 길
+- **오프닝 애니메이션**: 쭈비의 이야기를 담은 소개 영상
+- **스태프 소개**: 전시회 준비위원 정보
+
+### 🔍 작품 상세 페이지
+
+- 개별 작품의 상세 정보 제공
+- 작가 정보, 작품 설명, 장르 등
+- 작품 링크를 통한 원본 감상
+
+### 🚫 404 페이지
+
+- 편의점 테마에 맞는 독창적인 404 에러 페이지
+- 쭈비 캐릭터와 함께하는 재미있는 오류 안내
+
+## 🛠 기술 스택
+
+### Frontend
+
+- **React 19.1.0** - 사용자 인터페이스 구축
+- **React Router DOM 7.7.1** - 클라이언트 사이드 라우팅
+- **Vite 7.0.4** - 빌드 도구 및 개발 서버
+- **CSS3** - 사용자 정의 스타일링 및 애니메이션
+
+### Backend & Database
+
+- **Supabase** - 백엔드 서비스 (Database, Authentication, Storage)
+
+### 디자인 시스템
+
+- **커스텀 폰트**: Wheaton Capitals, Electrical Safety, Pretendard
+- **반응형 디자인**: 모바일, 태블릿, 데스크톱 지원
+- **CSS 변수**: 일관성 있는 컬러 팔레트 관리
+
+## 🎪 관리자 기능
+
+웹사이트에는 작품 관리를 위한 관리자 시스템이 포함되어 있습니다:
+
+- **작품 등록/수정/삭제**: 새로운 작품 추가 및 관리
+- **이미지 업로드**: Supabase Storage를 통한 파일 관리
+- **카테고리 분류**: 애니메이션, 만화, 아트워크별 관리
+- **작가 정보 관리**: 복수 작가 및 역할 정보 입력
+
+_관리자 기능 상세 가이드는 [README-admin.md](./README-admin.md)를 참조하세요._
+
+## 🎭 캐릭터 소개
+
+### 쭈비 (Zoobi)
+
+<img src="/public/images/dog_image.png" alt="쭈비 캐릭터" height="300" />
+
+- **역할**: SECAN 편의점의 아르바이트생
+- **특징**: 점장님 부재 중 혼자서 편의점을 운영하는 귀여운 강아지
+- **임무**: 방문자들에게 다양한 창작 작품들을 소개하고 안내
+
+_"과연 쭈비는 편의점을 잘 지켜줄 수 있을까?"_
+
+## 🎨 디자인 특징
+
+### 시각적 아이덴티티
+
+- **메인 컬러**: 하늘색 계열의 친근한 색상 팔레트
+- **타이포그래피**: 굵직한 제목체와 깔끔한 본문체의 조화
+- **애니메이션**: 부드러운 호버 효과 및 캐릭터 움직임
+
+### 사용자 경험 (UX)
+
+- **직관적 네비게이션**: 편의점 진열대처럼 명확한 카테고리 구분
+- **반응형 디자인**: 모든 디바이스에서 최적화된 경험
+- **접근성**: 명확한 버튼과 읽기 쉬운 텍스트
+
+## 🚀 시작하기
+
+### 설치 및 실행
+
+```bash
+# 의존성 설치
+npm install
+
+# 개발 서버 시작
+npm run dev
+
+# 빌드
+npm run build
+```
+
+### 환경 설정
+
+1. `.env` 파일 생성 및 Supabase 설정
+2. 데이터베이스 스키마 적용
+3. Storage 버킷 설정
+
+_자세한 설정 가이드는 [README-admin.md](./README-admin.md)를 참조하세요._
+
+## 📁 프로젝트 구조
+
+```
+secan-exhibition/
+├── public/
+│   ├── images/           # 이미지 리소스
+│   └── fonts/           # 웹폰트 파일
+├── src/
+│   ├── components/      # 재사용 가능한 컴포넌트
+│   ├── pages/          # 페이지 컴포넌트
+│   │   ├── animation/  # 애니메이션 작품 페이지
+│   │   ├── comics/     # 만화 작품 페이지
+│   │   ├── artwork/    # 아트워크 작품 페이지
+│   │   ├── info/       # 정보 페이지들
+│   │   └── admin/      # 관리자 페이지
+│   ├── layouts/        # 레이아웃 컴포넌트
+│   ├── contexts/       # React Context
+│   └── utils/          # 유틸리티 함수
+```
+
+## 🌐 배포 정보
+
+- **개발 환경**: `npm run dev` (localhost:5173)
+- **프로덕션 빌드**: `npm run build`
+- **배포 플랫폼**: [배포 URL 정보](<!-- 실제 배포 URL 추가 필요 -->)
+<!--
+
+## 👥 기여자
+
+### 개발팀
+
+- **프론트엔드 개발**: 전진우
+- **서버(supabase) 구성**: 전진우
+- **배포**: 전진우
+
+### 전시 기획팀
+
+- **전시 기획**: 세종대학교 만화애니메이션텍학과 졸업준비위원회
+- **캐릭터 디자인**:
+- **배경 디자인**:
+- **스토리텔링**:
+-
+- -->
+
+---
+
+_"세칸편의점에서 특별한 창작의 순간들을 만나보세요! 🏪✨"_
