@@ -1,0 +1,160 @@
+:root {
+  font-family: "Wheaton Capitals", "Electrical Safety Regular", "Pretendard", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* 메인 컬러 팔레트 */
+  --color-primary: #4a90e2;
+  --color-secondary: #2c5282;
+  --color-text: #213547;
+  --color-accent: #3e6cc8;
+  --color-background: #ffffff;
+
+  /* 상태 컬러 */
+  --color-success: #28a745;
+  --color-success-hover: #218838;
+  --color-danger: #dc3545;
+  --color-danger-hover: #c82333;
+  --color-warning: #ff8c42;
+  --color-warning-hover: #ff7a28;
+  --color-warning-dark: #ff6b14;
+  --color-info: #00a0e9;
+  --color-info-light: #0f7eda;
+
+  /* 그레이 스케일 */
+  --color-white: #ffffff;
+  --color-gray-50: #f8f9fa;
+  --color-gray-100: #f9f9f9;
+  --color-gray-200: #e6e6e6;
+  --color-gray-300: #dee2e6;
+  --color-gray-400: #ddd;
+  --color-gray-500: #666;
+  --color-gray-600: #555;
+  --color-gray-700: #444;
+  --color-gray-800: #333;
+  --color-gray-900: #222;
+
+  /* 테마 컬러 */
+  --color-blue-50: #e3f2fd;
+  --color-blue-100: #2196f3;
+  --color-blue-200: #1976d2;
+  --color-blue-500: #007bff;
+  --color-blue-600: #0056b3;
+  --color-sky-blue: #87ceeb;
+
+  /* 경계선 */
+  --border-color: #ddd;
+  --border-color-light: #eee;
+  --border-radius: 8px;
+  --border-radius-sm: 4px;
+  --border-radius-lg: 20px;
+
+  color: var(--color-text);
+  background-color: var(--color-background);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--color-background);
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--color-gray-100);
+  color: var(--color-text);
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* 이미지 배경을 위한 유틸리티 클래스들 */
+.bg-image {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bg-image-contain {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bg-image-fixed {
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bg-overlay {
+  position: relative;
+}
+
+.bg-overlay::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+.bg-overlay-light::before {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.bg-overlay-dark::before {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* 레이아웃 유틸리티 */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.full-height {
+  min-height: 100vh;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

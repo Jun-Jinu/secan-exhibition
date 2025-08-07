@@ -1,0 +1,38 @@
+@font-face {
+  font-family: "Wheaton Capitals";
+  src: url("/fonts/wheaton capitals.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Electrical Safety Regular";
+  src: url("/fonts/Electrical Safety Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Electrical Safety Bold";
+  src: url("/fonts/Electrical Safety Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("/fonts/PretendardVariable.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.App {
+  min-height: 100vh;
+  background-color: #ffffff;
+}
+
+#root {
+  margin: 0;
+  padding: 0;
+  font-family: "Wheaton Capitals", "Electrical Safety Bold", "Pretendard", sans-serif;
+}

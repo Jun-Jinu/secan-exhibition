@@ -1,0 +1,101 @@
+/* 스태프 리스트 아이템 컴포넌트 */
+.staff-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 0;
+  font-size: 1rem;
+  position: relative;
+}
+
+.staff-role {
+  min-width: 120px;
+  text-align: left;
+  font-weight: 500;
+}
+
+.staff-dots {
+  flex: 1;
+  text-align: center;
+  color: #666666;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 15px;
+  display: none;
+}
+
+.staff-name {
+  min-width: 120px;
+  text-align: right;
+  font-weight: 600;
+}
+
+/* 섹션 타이틀 */
+.staff-section {
+  margin: 40px 0 20px 0;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin: 0;
+  padding: 10px 0;
+  display: inline-block;
+  min-width: 200px;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+  .staff-item {
+    font-size: 0.9rem;
+    padding: 6px 0;
+  }
+
+  .staff-role,
+  .staff-name {
+    min-width: 100px;
+  }
+
+  .staff-dots {
+    display: block;
+    margin: 0 10px;
+    font-size: 0.7rem;
+  }
+
+  .section-title {
+    font-size: 1.2rem;
+    min-width: 150px;
+    border-bottom: 2px solid #4a90e2;
+  }
+}
+
+@media (max-width: 480px) {
+  .staff-item {
+    font-size: 0.8rem;
+    flex-direction: column;
+    text-align: center;
+    padding: 8px 0;
+  }
+
+  .staff-role {
+    margin-bottom: 5px;
+    min-width: auto;
+  }
+
+  .staff-dots {
+    display: none;
+  }
+
+  .staff-name {
+    min-width: auto;
+    text-align: center;
+  }
+
+  .section-title {
+    font-size: 1.1rem;
+    min-width: auto;
+  }
+}

@@ -1,0 +1,94 @@
+/* 작품 카드 컴포넌트 */
+.work-card {
+  overflow: hidden;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.work-card:hover {
+  transform: translateY(-3px);
+}
+
+/* 이미지 영역 */
+.work-image {
+  width: 100%;
+  height: 160px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.work-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.work-image-placeholder {
+  width: 100%;
+  height: 100%;
+  background-color: #e6e6e6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #999999;
+  font-size: 0.9rem;
+}
+
+.work-image-placeholder::before {
+  content: "이미지";
+}
+
+/* 작품 정보 영역 */
+.work-card-info {
+  text-align: center;
+  margin-top: 4px;
+}
+
+.work-card-title {
+  color: #333;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.work-card-subtitle {
+  color: #444;
+  font-size: 0.85rem;
+  font-weight: 400;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+  .work-image {
+    height: 180px;
+  }
+
+  .work-card-info {
+    padding: 12px;
+  }
+
+  .work-card-title {
+    font-size: 0.9rem;
+  }
+
+  .work-card-subtitle {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .work-image {
+    height: 160px;
+  }
+
+  .work-card-info {
+    padding: 10px;
+  }
+
+  .work-card-title {
+    font-size: 0.85rem;
+  }
+
+  .work-card-subtitle {
+    font-size: 0.75rem;
+  }
+}

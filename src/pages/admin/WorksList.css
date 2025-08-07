@@ -1,0 +1,235 @@
+.works-list {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.works-list-empty {
+  background: white;
+  padding: 40px;
+  text-align: center;
+  border-radius: 8px;
+  color: #666;
+}
+
+.works-table {
+  width: 100%;
+}
+
+.table-header {
+  display: grid;
+  grid-template-columns: 80px 2fr 1fr 1fr 1.5fr 1fr 1fr 120px;
+  background-color: #f8f9fa;
+  font-weight: 600;
+  color: #495057;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.table-row {
+  display: grid;
+  grid-template-columns: 80px 2fr 1fr 1fr 1.5fr 1fr 1fr 120px;
+  border-bottom: 1px solid #dee2e6;
+  transition: background-color 0.2s;
+}
+
+.table-row:hover {
+  background-color: #f8f9fa;
+}
+
+.table-cell {
+  padding: 12px 8px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  word-break: break-word;
+}
+
+.thumbnail-cell {
+  justify-content: center;
+}
+
+.work-thumbnail {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 4px;
+  border: 1px solid #dee2e6;
+}
+
+.no-image {
+  width: 50px;
+  height: 50px;
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  color: #6c757d;
+  text-align: center;
+}
+
+.work-title {
+  font-size: 24px;
+  font-weight: 500;
+  color: #333;
+}
+
+.work-subtitle {
+  font-size: 12px;
+  color: #666;
+  margin-top: 2px;
+}
+
+.category-badge {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.category-badge.animation {
+  background-color: #e3f2fd;
+  color: #1976d2;
+}
+
+.category-badge.comics {
+  background-color: #f3e5f5;
+  color: #7b1fa2;
+}
+
+.category-badge.artwork {
+  background-color: #e8f5e8;
+  color: #388e3c;
+}
+
+.graduation-badge {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.graduation-badge.graduation {
+  background-color: #fff3cd;
+  color: #856404;
+  border: 1px solid #ffeaa7;
+}
+
+.graduation-badge.assignment {
+  background-color: #e2e3e5;
+  color: #495057;
+  border: 1px solid #ced4da;
+}
+
+.authors-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.author-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 6px 8px;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  border: 1px solid #dee2e6;
+}
+
+.author-name {
+  font-size: 13px;
+  font-weight: 600;
+  color: #495057;
+}
+
+.author-role {
+  font-size: 11px;
+  color: #6c757d;
+  font-style: italic;
+}
+
+.author-email {
+  font-size: 11px;
+  color: #6c757d;
+  word-break: break-all;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.edit-button,
+.delete-button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.edit-button {
+  background-color: #007bff;
+  color: white;
+}
+
+.edit-button:hover {
+  background-color: #0056b3;
+}
+
+.delete-button {
+  background-color: #dc3545;
+  color: white;
+}
+
+.delete-button:hover {
+  background-color: #c82333;
+}
+
+@media (max-width: 1024px) {
+  .table-header,
+  .table-row {
+    grid-template-columns: 60px 2fr 0.8fr 0.8fr 1.2fr 0.8fr 0.8fr 100px;
+  }
+
+  .table-cell {
+    padding: 10px 6px;
+    font-size: 13px;
+  }
+
+  .work-thumbnail,
+  .no-image {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .works-table {
+    overflow-x: auto;
+  }
+
+  .table-header,
+  .table-row {
+    min-width: 900px;
+  }
+
+  .author-info {
+    margin-bottom: 4px;
+  }
+
+  .graduation-badge {
+    font-size: 10px;
+    padding: 2px 6px;
+  }
+}

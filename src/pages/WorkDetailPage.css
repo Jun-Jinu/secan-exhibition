@@ -1,0 +1,45 @@
+/* WorkDetailPage 배경 스타일 */
+.work-detail-page-container {
+  min-height: 100vh;
+  background-image: url("/images/detail_background_image.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: "Electrical Safety Regular", sans-serif;
+}
+
+/* 로딩 및 에러 상태 스타일 */
+.work-detail-loading,
+.work-detail-error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 18px;
+  background-image: url("/images/detail_background_image.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.work-detail-loading {
+  color: #666;
+}
+
+.work-detail-error {
+  color: #dc3545;
+}
+
+/* 모바일 화면에서 배경 이미지 투명도 조정 */
+@media (max-width: 768px) {
+  .work-detail-page-container {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)),
+      url("/images/detail_background_image.png");
+  }
+
+  .work-detail-loading,
+  .work-detail-error {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)),
+      url("/images/detail_background_image.png");
+  }
+}

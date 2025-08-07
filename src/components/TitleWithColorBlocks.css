@@ -1,0 +1,82 @@
+/* 타이틀 with 색상 블록 컴포넌트 */
+.title-with-blocks-container {
+  margin-bottom: 80px;
+  position: relative;
+}
+
+/* 타이틀 컨테이너 */
+.title-container {
+  font-family: "Wheaton Capitals", "Electrical Safety Regular", "Pretendard", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+  position: relative;
+}
+
+.main-title-sub {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 10px;
+  color: var(--color-blue-200);
+  letter-spacing: 2px;
+}
+
+.main-title-main {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin: 0;
+  color: var(--color-info-light);
+  -webkit-text-stroke: 1px var(--color-secondary);
+  letter-spacing: 3px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* 색상 블록들 */
+.color-blocks-left,
+.color-blocks-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  z-index: 1;
+}
+
+.color-blocks-left {
+  left: 0;
+}
+
+.color-blocks-right {
+  right: 0;
+}
+
+.color-block {
+  width: 100px;
+  height: 40px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+  .main-title-sub {
+    font-size: 2rem;
+  }
+
+  .main-title-main {
+    font-size: 2rem;
+  }
+
+  .color-blocks-left,
+  .color-blocks-right {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .title-with-blocks-container {
+    margin-bottom: 40px;
+  }
+}

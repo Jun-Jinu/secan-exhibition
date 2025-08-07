@@ -1,0 +1,23 @@
+.layout {
+  min-height: 100vh;
+  background-color: #ffffff;
+}
+
+.layout-content {
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+  /* padding: 20px; */
+}
+
+/* 이미지 배경이 있을 때 콘텐츠가 잘 보이도록 */
+.layout.bg-image .layout-content {
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(1px);
+}
+
+/* 오버레이가 있을 때는 배경색 제거 */
+.layout.bg-overlay .layout-content {
+  background-color: transparent;
+  backdrop-filter: none;
+}

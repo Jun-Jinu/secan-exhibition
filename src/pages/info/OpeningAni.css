@@ -1,0 +1,319 @@
+.opening-ani-container {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* 상단 히어로 섹션 */
+.hero-section {
+  /* font-family: "Electrical Safety Regular"; */
+  width: 100%;
+  height: 480px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-subtitle {
+  font-family: "Electrical Safety Regular";
+  color: var(--color-white);
+  font-size: 1.2rem;
+  letter-spacing: 0.2em;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.hero-title {
+  font-family: "Electrical Safety Bold";
+  font-size: 87px;
+  color: var(--color-white);
+  -webkit-text-stroke: 3px var(--color-info-light);
+  text-shadow: 4px 4px 0 var(--color-info-light);
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.hero-description {
+  font-family: "Electrical Safety Bold";
+  color: var(--color-info-light);
+  font-size: 1.3rem;
+  margin-bottom: 0;
+  line-height: 1.5;
+  -webkit-text-stroke: 0.8px var(--color-white);
+}
+
+/* 캐릭터 소개 섹션 */
+.character-section {
+  background-color: var(--color-white);
+  padding: 60px 20px 0;
+}
+
+.character-container {
+  max-width: 800px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: flex-start;
+}
+
+.character-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dog-character {
+  text-align: center;
+  position: relative;
+}
+
+.dog-character img {
+  max-width: 280px;
+  height: auto;
+}
+
+.character-right {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.character-title-box {
+  background: var(--color-info-light);
+  color: white;
+  padding: 2px 50px;
+  border-radius: 25px;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.character-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 0;
+  color: var(--color-white);
+}
+
+.character-description {
+  background-color: var(--color-white);
+}
+
+.character-description p {
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 0;
+  color: var(--color-gray-700);
+}
+
+/* 편의점 섹션 */
+.store-section {
+  background-color: var(--color-white);
+  padding: 200px 20px 100px;
+  min-height: 800px;
+  background-image: url("/images/store_image.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.store-container {
+  max-width: 700px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.store-content {
+  font-family: "Electrical Safety Regular";
+  background: transparent;
+  padding: 100px 40px 40px;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.store-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.store-title {
+  background: var(--color-info-light);
+  color: white;
+  font-size: 25px;
+  padding: 2px 50px;
+  border-radius: 20px;
+  display: inline-block;
+  margin: 0;
+}
+
+.store-description {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.store-description p {
+  color: var(--color-gray-700);
+  font-size: 1rem;
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* 비디오 섹션 */
+.video-section {
+  display: flex;
+  justify-content: center;
+}
+
+.video-container {
+  width: 100%;
+  max-width: 600px;
+}
+
+.video-placeholder {
+  background: #000000;
+  aspect-ratio: 16/9;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-white);
+  text-align: center;
+}
+
+.play-button {
+  font-size: 4rem;
+  color: var(--color-white);
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.play-button:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 1024px) {
+  .store-section {
+    padding: 100px 20px 100px;
+    min-height: 500px;
+    background-image: none;
+  }
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+  .hero-section {
+    height: 300px;
+    background-position: top;
+    background-size: 300% auto;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+    -webkit-text-stroke: 1px #0f7eda;
+    text-shadow: 2px 2px 0 #0f7eda;
+  }
+
+  .hero-subtitle {
+    font-size: 0.9rem;
+    -webkit-text-stroke: 0.5px #0f7eda;
+    text-shadow: 1px 1px 0 #0f7eda;
+  }
+
+  .hero-description {
+    font-size: 1.1rem;
+    -webkit-text-stroke: 0.5px #fff;
+    text-shadow: 1px 1px 0 #fff;
+  }
+
+  .character-container {
+    /* grid-template-columns: 1fr; */
+    gap: 10px;
+    text-align: center;
+  }
+
+  .character-right {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .character-title-box {
+    padding: 0 40px;
+    margin-bottom: 5px;
+  }
+
+  .dog-character img {
+    /* max-width: 200px; */
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .store-content {
+    padding: 10px 20px 30px;
+  }
+
+  .store-description p {
+    font-size: 0.9rem;
+  }
+
+  .store-section {
+    padding: 30px 15px;
+    background-image: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+  }
+
+  .character-section {
+    padding: 20px 15px;
+  }
+
+  .dog-character img {
+    max-width: 200px;
+  }
+
+  .character-title {
+    font-size: 1.2rem;
+  }
+
+  .character-description p {
+    font-size: 0.9rem;
+  }
+
+  .store-content {
+    padding: 10px 15px 25px;
+  }
+
+  .store-title {
+    font-size: 1.1rem;
+    padding: 2px 25px;
+  }
+
+  .store-section {
+    padding: 20px 10px;
+    background-image: none;
+  }
+
+  .video-container iframe {
+    height: 250px;
+  }
+}
