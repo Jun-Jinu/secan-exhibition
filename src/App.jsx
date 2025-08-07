@@ -24,6 +24,9 @@ import ArtworkAssignment from "./pages/artwork/Assignment";
 // 작품 상세 페이지
 import WorkDetailPage from "./pages/WorkDetailPage";
 
+// 404 페이지
+import NotFound from "./pages/NotFound";
+
 // 관리자 페이지
 import { AuthProvider } from "./contexts/AuthContext";
 import ProtectedRoute from "./components/ProtectedRoute";
@@ -77,6 +80,9 @@ function App() {
 
                       {/* 작품 상세 페이지 라우트 */}
                       <Route path="/:category/:type/:id" element={<WorkDetailPage />} />
+
+                      {/* 404 페이지 - 마지막에 배치 */}
+                      <Route path="*" element={<NotFound />} />
                     </Routes>
                   </main>
                 </>
