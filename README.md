@@ -84,6 +84,11 @@
 
 - **Supabase** - 백엔드 서비스 (Database, Authentication, Storage)
 
+### Deployment & Domain
+
+- **Vercel** - 웹사이트 배포 및 호스팅
+- **Cloudflare** - DNS 및 도메인 관리
+
 ### 디자인 시스템
 
 - **커스텀 폰트**: Wheaton Capitals, Electrical Safety, Pretendard
