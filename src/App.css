@@ -3,6 +3,7 @@
   src: url("/fonts/wheaton capitals.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -10,6 +11,7 @@
   src: url("/fonts/Electrical Safety Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -17,13 +19,15 @@
   src: url("/fonts/Electrical Safety Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Pretendard";
-  src: url("/fonts/PretendardVariable.ttf") format("truetype");
+  src: url("/fonts/PretendardVariable.woff2") format("woff2"), url("/fonts/PretendardVariable.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 .App {
