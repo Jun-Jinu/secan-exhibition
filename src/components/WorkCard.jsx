@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./WorkCard.css";
 
-const WorkCard = ({ title, subtitle, imageUrl, thumbnailUrl, children, onClick, workId, category, type }) => {
+const WorkCard = ({ title, subtitle, thumbnailUrl, children, onClick, workId, category, type }) => {
   const navigate = useNavigate();
 
   const handleClick = () => {
@@ -20,12 +20,15 @@ const WorkCard = ({ title, subtitle, imageUrl, thumbnailUrl, children, onClick, 
         <>
           {/* 이미지 영역 */}
           <div className="work-image">
+            {thumbnailUrl ? <img src={thumbnailUrl} alt={title} /> : <div className="work-image-placeholder"></div>}
+          </div>
+          {/* <div className="work-image">
             {thumbnailUrl || imageUrl ? (
               <img src={thumbnailUrl || imageUrl} alt={title} />
             ) : (
               <div className="work-image-placeholder"></div>
             )}
-          </div>
+          </div> */}
 
           {/* 제목 및 부제목 영역 */}
           <div className="work-card-info">

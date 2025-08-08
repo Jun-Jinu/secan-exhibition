@@ -22,6 +22,7 @@ const ComicsGraduation = () => {
           title: work.title,
           subtitle: work.subtitle,
           imageUrl: work.image_url,
+          thumbnailUrl: work.thumbnail_url,
         }));
 
         setWorks(formattedWorks);

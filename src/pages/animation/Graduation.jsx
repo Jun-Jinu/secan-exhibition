@@ -15,6 +15,7 @@ const AnimationGraduation = () => {
       try {
         setLoading(true);
         const data = await worksAPI.getWorksByCategory("animation", true); // 졸업작품만
+        // console.log(data);
 
         // WorksGallery 형식에 맞게 데이터 변환
         const formattedWorks = data.map((work) => ({
@@ -22,6 +23,7 @@ const AnimationGraduation = () => {
           title: work.title,
           subtitle: work.subtitle,
           imageUrl: work.image_url,
+          thumbnailUrl: work.thumbnail_url,
         }));
 
         setWorks(formattedWorks);
