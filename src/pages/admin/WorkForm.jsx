@@ -149,14 +149,22 @@ const WorkForm = ({ work, onSubmit, onCancel }) => {
 
       setIsUploading(false);
 
-      // 썸네일 검증 (신규 작품인 경우)
+      // 메인 이미지 검증
+      if (!work && !selectedFile && !formData.image_url) {
+        // 신규 작품인 경우 메인 이미지 필수
+        setError("작품 이미지를 업로드해주세요.");
+        return;
+      }
+
+      // 썸네일 검증
       if (!work && !selectedThumbnailFile) {
+        // 신규 작품인 경우 썸네일 필수
         setError("썸네일 이미지를 업로드해주세요.");
         return;
       }
 
-      // 기존 작품 수정 시 썸네일 검증
       if (work && !formData.thumbnail_url && !selectedThumbnailFile) {
+        // 기존 작품 수정 시 기존 썸네일이 없고 새로운 썸네일도 없는 경우만 에러
         setError("썸네일 이미지를 업로드해주세요.");
         return;
       }
@@ -273,7 +281,7 @@ const WorkForm = ({ work, onSubmit, onCancel }) => {
           </div>
 
           <div className="form-group">
-            <label htmlFor="image_file">작품 이미지 *</label>
+            <label htmlFor="image_file">작품 이미지 {work && formData.image_url ? "" : "*"}</label>
             <input type="file" id="image_file" accept="image/*" onChange={handleFileChange} className="file-input" />
             {selectedFile && <div className="file-info">선택된 파일: {selectedFile.name}</div>}
             {formData.image_url && !selectedFile && (
@@ -285,14 +293,14 @@ const WorkForm = ({ work, onSubmit, onCancel }) => {
           </div>
 
           <div className="form-group">
-            <label htmlFor="thumbnail_file">썸네일 이미지 *</label>
+            <label htmlFor="thumbnail_file">썸네일 이미지 {work && formData.thumbnail_url ? "" : "*"}</label>
             <input
               type="file"
               id="thumbnail_file"
               accept="image/*"
               onChange={handleThumbnailFileChange}
               className="file-input"
-              required
+              required={!work || !formData.thumbnail_url}
             />
             {selectedThumbnailFile && <div className="file-info">선택된 썸네일: {selectedThumbnailFile.name}</div>}
             {formData.thumbnail_url && !selectedThumbnailFile && (
