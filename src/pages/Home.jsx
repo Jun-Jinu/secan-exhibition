@@ -36,34 +36,38 @@ const Home = () => {
           <div className="exhibition-info-content">
             <p className="exhibition-subtitle">세종대학교 만화애니메이션텍 졸업/과제작품 전시회</p>
 
-            <div className="info-section">
-              <strong>일시</strong> | 2025.10.20 - 10.27
+            <div className="info-row">
+              <div className="info-label">일 시</div>
+              <div className="info-value">2025.10.20 - 10.27</div>
             </div>
 
-            <div className="info-section">
-              <strong>장소</strong> | 세종대학교 광개토관 지하1층 세종뮤지엄갤러리3관
+            <div className="info-row">
+              <div className="info-label">장 소</div>
+              <div className="info-value">세종대학교 광개토관 지하1층 세종뮤지엄갤러리3관</div>
             </div>
 
-            <div className="info-section">
-              <strong>시간</strong> | 평일: 11:00 - 20:30
-              <br />
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;주말: 13:00 - 20:30
+            <div className="info-row">
+              <div className="info-label">시 간</div>
+              <div className="info-value">
+                평일: 11:00 - 20:30
+                <br />
+                주말: 13:00 - 20:30
+              </div>
             </div>
 
-            <div className="info-section">
-              <strong>상영회</strong> | 세종대학교 대양홀 | 10.26
-              <br />
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| 1부 13:00 - 15:00, 2부
-              15:30 - 17:30,
-              <br />
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3부 18:00 -
-              20:00
-              <br />
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;세종대학교 학생회관 지하1층
-              대공연장 | 10.24, 10.27
-              <br />
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| 1부 09:00 - 11:00, 2부
-              11:30 - 13:30
+            <div className="info-row">
+              <div className="info-label">상영회</div>
+              <div className="info-value">
+                세종대학교 대양홀 | 10.26
+                <br />
+                1부 13:00 - 15:00, 2부 15:30 - 17:30,
+                <br />
+                3부 18:00 - 20:00
+                <br />
+                세종대학교 학생회관 지하1층 대공연장 | 10.24, 10.27
+                <br />
+                1부 09:00 - 11:00, 2부 11:30 - 13:30
+              </div>
             </div>
           </div>
         </div>

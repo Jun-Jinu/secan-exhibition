@@ -9,27 +9,14 @@
 }
 
 .staff-role {
+  font-family: "Electrical Safety Bold", "Pretendard", sans-serif;
   min-width: 120px;
-  text-align: left;
-  font-weight: 500;
-}
-
-.staff-dots {
-  flex: 1;
-  text-align: center;
-  color: #666666;
-  font-size: 0.8rem;
-  letter-spacing: 2px;
-  overflow: hidden;
-  white-space: nowrap;
-  margin: 0 15px;
-  display: none;
+  font-size: 1.1rem;
 }
 
 .staff-name {
+  font-family: "Electrical Safety Regular", "Pretendard", sans-serif;
   min-width: 120px;
-  text-align: right;
-  font-weight: 600;
 }
 
 /* 섹션 타이틀 */
@@ -54,21 +41,18 @@
     padding: 6px 0;
   }
 
-  .staff-role,
-  .staff-name {
+  .staff-role {
     min-width: 100px;
+    font-size: 1rem;
   }
 
-  .staff-dots {
-    display: block;
-    margin: 0 10px;
-    font-size: 0.7rem;
+  .staff-name {
+    min-width: 100px;
   }
 
   .section-title {
     font-size: 1.2rem;
     min-width: 150px;
-    border-bottom: 2px solid #4a90e2;
   }
 }
 
@@ -83,10 +67,7 @@
   .staff-role {
     margin-bottom: 5px;
     min-width: auto;
-  }
-
-  .staff-dots {
-    display: none;
+    font-size: 0.9rem;
   }
 
   .staff-name {
@@ -97,5 +78,6 @@
   .section-title {
     font-size: 1.1rem;
     min-width: auto;
+    border-bottom: 2px solid #4a90e2;
   }
 }

@@ -18,9 +18,7 @@
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
-  /* 스티커 안쪽에 텍스트가 위치하도록 패딩 조정 */
-  padding: 150px 80px 100px;
-  color: transparent; /* 기본적으로 텍스트 숨김 */
+  color: transparent;
 }
 
 /* 구분선 */
@@ -53,7 +51,6 @@
 .staff-location {
   margin: 20px 0;
   font-size: 0.9rem;
-  text-align: left;
 }
 
 .staff-location div {
@@ -64,59 +61,33 @@
 .staff-date {
   margin: 20px 0;
   font-size: 0.9rem;
-  text-align: left;
 }
 
 /* 스태프 리스트 */
 .staff-list {
   margin-top: 40px;
-  text-align: left;
 }
 
 /* 반응형 디자인 */
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .staff-container {
-    max-width: 500px;
-    padding: 80px 15px 40px;
     background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)),
       url("/images/staff_background_image.png");
+    padding-top: 40px;
   }
 
-  .staff-content {
-    background-image: none; /* 모바일에서 스티커 이미지 숨김 */
-    padding: 80px 15px 40px; /* 모바일용 패딩 */
-    color: #222; /* 768px 이하에서만 텍스트 표시 */
+  .main-title {
+    color: var(--color-info-light);
   }
 
   .staff-divider {
     display: block;
   }
 
-  .staff-info {
-    font-size: 0.9rem;
-  }
-
-  .staff-location,
-  .staff-date {
-    font-size: 0.8rem;
-  }
-
-  .staff-location div[style] {
-    margin-left: 20px !important;
-  }
-}
-
-@media (max-width: 480px) {
-  .staff-container {
-    max-width: 400px;
-    padding: 70px 10px 30px;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
-      url("/images/staff_background_image.png");
-  }
-
   .staff-content {
-    background-image: none; /* 모바일에서 스티커 이미지 숨김 */
-    padding: 70px 10px 30px; /* 모바일용 패딩 */
+    background-image: none;
+    padding: 80px 15px 40px;
+    color: #222;
   }
 
   .staff-info {

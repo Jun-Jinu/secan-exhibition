@@ -18,6 +18,7 @@
 /* 작품 그리드 */
 .works-grid-container {
   border: 12px solid rgb(62, 108, 200);
+  background-color: #fff;
   border-width: 5px 7px 10px 5px;
   padding: 20px;
   border-radius: 20px;
@@ -25,7 +26,7 @@
 }
 
 .works-grid {
-  background-color: rgb(173, 220, 254);
+  background-color: #97ddff;
   padding: 32px;
   border-radius: 20px;
   display: grid;
@@ -52,6 +53,8 @@
 
 @media (max-width: 768px) {
   .works-gallery-container {
+    background-color: #b1e6ff;
+    background-image: none;
     max-width: 700px;
     padding: 70px 0 40px;
   }
@@ -63,6 +66,7 @@
 
   .works-grid-container {
     border: none;
+    background-color: transparent;
     padding: 0;
     border-radius: 0;
     margin: 40px 0 15px;

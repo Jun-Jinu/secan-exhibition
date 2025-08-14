@@ -40,3 +40,15 @@
   padding: 0;
   font-family: "Wheaton Capitals", "Electrical Safety Bold", "Pretendard", sans-serif;
 }
+
+/* @media (max-width: 768px) {
+  .App {
+    padding-top: 70px;
+  }
+}
+
+@media (max-width: 480px) {
+  .App {
+    padding-top: 60px;
+  }
+} */

@@ -43,7 +43,7 @@
 }
 
 .work-detail-main-section-container {
-  background-color: rgb(173, 220, 254);
+  background-color: #97ddff;
   padding: 32px;
   border-radius: 20px;
 }
@@ -107,6 +107,7 @@
 }
 
 .work-detail-title {
+  font-family: "Electrical Safety Bold", "Pretendard", sans-serif;
   font-size: 2.2rem;
   font-weight: bold;
   color: var(--color-secondary);
@@ -174,6 +175,7 @@
 }
 
 .work-detail-authors-title {
+  font-family: "Electrical Safety Bold", "Pretendard", sans-serif;
   font-size: 1.8rem;
   font-weight: bold;
   padding-left: 20px;

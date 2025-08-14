@@ -39,6 +39,7 @@
   text-shadow: 4px 4px 0 var(--color-info-light);
   font-weight: bold;
   letter-spacing: 2px;
+  margin: 20px 0 30px;
 }
 
 .hero-description {
@@ -47,7 +48,10 @@
   font-size: 1.3rem;
   margin-bottom: 0;
   line-height: 1.5;
-  -webkit-text-stroke: 0.8px var(--color-white);
+  /* -webkit-text-stroke: 0.8px var(--color-white); */
+
+  text-shadow: -1px -1px 0 var(--color-white), 1px -1px 0 var(--color-white), -1px 1px 0 var(--color-white),
+    1px 1px 0 var(--color-white);
 }
 
 /* 캐릭터 소개 섹션 */

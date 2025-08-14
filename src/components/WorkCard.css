@@ -45,6 +45,7 @@
 }
 
 .work-card-title {
+  font-family: "Electrical Safety Bold", "Pretendard", sans-serif;
   color: #333;
   font-weight: bold;
   font-size: 1.2rem;
@@ -63,15 +64,16 @@
   }
 
   .work-card-info {
-    padding: 12px;
+    margin-top: 0;
+    padding: 6px;
   }
 
   .work-card-title {
-    font-size: 0.9rem;
+    font-size: 1.6rem;
   }
 
   .work-card-subtitle {
-    font-size: 0.8rem;
+    font-size: 1.1rem;
   }
 }
 
@@ -81,14 +83,14 @@
   }
 
   .work-card-info {
-    padding: 10px;
+    padding: 4px;
   }
 
   .work-card-title {
-    font-size: 0.85rem;
+    font-size: 1.2rem;
   }
 
   .work-card-subtitle {
-    font-size: 0.75rem;
+    font-size: 0.9rem;
   }
 }

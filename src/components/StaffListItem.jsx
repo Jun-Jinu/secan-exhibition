@@ -13,7 +13,6 @@ const StaffListItem = ({ role, name, isSection = false }) => {
   return (
     <div className="staff-item">
       <div className="staff-role">{role}</div>
-      <div className="staff-dots">{"•".repeat(30)}</div>
       <div className="staff-name">{name}</div>
     </div>
   );

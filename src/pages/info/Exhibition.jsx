@@ -1,6 +1,6 @@
 import React from "react";
 import Layout from "../../layouts/Layout";
-import TitleWithColorBlocks from "../../components/TitleWithColorBlocks";
+import ExhibitionTitle from "../../components/ExhibitionTitle";
 import KakaoMapEmbed from "../../components/KakaoMapEmbed";
 import "./Exhibition.css";
 
@@ -9,8 +9,8 @@ const Exhibition = () => {
     <Layout>
       <div className="exhibition-container">
         <div className="exhibition-content">
-          {/* 메인 타이틀 */}
-          <TitleWithColorBlocks sub_title="2025" main_title="SECAN EXHIBITION" />
+          {/* 메인 타이틀 (전용 래퍼 사용) */}
+          <ExhibitionTitle sub_title="2025" main_title="SECAN EXHIBITION" />
 
           {/* 설명 텍스트들 */}
           <div className="description-text">

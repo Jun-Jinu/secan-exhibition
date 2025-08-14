@@ -33,13 +33,29 @@
 /* 모바일 화면에서 배경 이미지 투명도 조정 */
 @media (max-width: 768px) {
   .work-detail-page-container {
+    background-color: #fafafa;
+    background-image: none;
+  }
+  /* .work-detail-page-container {
     background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)),
       url("/images/detail_background_image.png");
-  }
+  } */
 
   .work-detail-loading,
   .work-detail-error {
     background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)),
       url("/images/detail_background_image.png");
+  }
+}
+
+@media (max-width: 768px) {
+  .work-detail-page-container {
+    padding-top: 70px;
+  }
+}
+
+@media (max-width: 480px) {
+  .work-detail-page-container {
+    padding-top: 60px;
   }
 }

@@ -17,14 +17,15 @@
 .description-text {
   font-family: "Electrical Safety Bold";
   color: #fff;
-  -webkit-text-stroke: 1.3px #0f7eda;
-  text-shadow: 1px 1px 0 #0f7eda;
+
+  text-shadow: -1px -1px 0 #0f7eda, 1px -1px 0 #0f7eda, -1px 1px 0 #0f7eda, 1px 1px 0 #0f7eda;
   margin-bottom: 80px;
   line-height: 1.4;
   font-size: 1.4rem;
 }
 
 .location-section {
+  font-family: "Electrical Safety Regular";
   background-color: #fff;
   border-radius: 20px;
   padding: 15px 100px 40px;

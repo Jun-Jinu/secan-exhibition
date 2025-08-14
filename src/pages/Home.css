@@ -18,29 +18,29 @@
   left: 100px;
   z-index: 10;
   font-family: "Wheaton Capitals", sans-serif;
-  -webkit-text-stroke: 5px var(--color-info);
+
+  text-shadow: -4px -4px 0 var(--color-info), 4px -4px 0 var(--color-info), -4px 4px 0 var(--color-info),
+    4px 4px 0 var(--color-info), 6px 8px 5px rgba(0, 0, 0, 0.8);
 }
 
 .title-2025 {
-  font-size: 70px;
+  font-size: 4rem;
   font-weight: bold;
   color: var(--color-white);
   margin: 0;
   margin-bottom: 5px;
   line-height: 0.85;
-  letter-spacing: 2px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  letter-spacing: 0.1px;
 }
 
 .title-secan {
-  font-size: 110px;
+  font-size: 7rem;
   font-weight: bold;
   color: var(--color-white);
   margin: 0;
   margin-bottom: 5px;
   line-height: 0.85;
-  letter-spacing: 3px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  letter-spacing: 0.2px;
 }
 
 .title-exhibition {
@@ -49,18 +49,17 @@
   color: var(--color-white);
   margin: 0;
   line-height: 0.85;
-  letter-spacing: 2px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  letter-spacing: 0.2px;
 }
 
 /* 캐릭터 이미지 스타일 */
 .home-character {
   position: fixed;
-  bottom: 0px;
-  right: 0px;
+  bottom: 45px;
+  right: 45px;
   z-index: 5;
-  min-width: 60vw;
-  max-width: 75vw;
+  min-width: 20vw;
+  max-width: 30vw;
 }
 
 .home-character img {
@@ -101,6 +100,10 @@
   .title-secan,
   .title-exhibition {
     font-size: 4.5rem;
+  }
+
+  .home-character {
+    max-width: 50%;
   }
 }
 
@@ -154,8 +157,7 @@
     font-weight: bold;
     text-align: center;
     margin: 0 0 15px 0;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    -webkit-text-stroke: 1px #0066cc;
+    text-shadow: -1px -1px 0 #0066cc, 1px -1px 0 #0066cc, -1px 1px 0 #0066cc, 1px 1px 0 #0066cc;
   }
 
   .exhibition-info-box {
@@ -169,6 +171,43 @@
   .exhibition-info-content {
     color: #333;
     line-height: 1.6;
+  }
+
+  /* 라벨/값 2열 구조 */
+  .info-row {
+    display: grid;
+    grid-template-columns: 66px 1fr;
+    align-items: start;
+    padding: 4px 0;
+  }
+
+  .info-row:last-child {
+    margin-bottom: 0;
+  }
+
+  .info-label {
+    color: #2c5282;
+    text-align: center;
+    position: relative;
+    margin-right: 10px;
+  }
+
+  .info-label::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 2px;
+    height: 60%;
+    background: #213547;
+    border-radius: 2px;
+    opacity: 0.9;
+  }
+
+  .info-value {
+    color: #213547;
+    word-break: keep-all;
   }
 
   .exhibition-subtitle {
