@@ -2,6 +2,8 @@
 .title-with-blocks-container {
   margin-bottom: 80px;
   position: relative;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 /* 중앙 흰색 배경 (좌우 색상 블록 영역 제외) */
@@ -23,6 +25,8 @@
   align-items: center;
   z-index: 2;
   position: relative;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .main-title-sub {
@@ -91,6 +95,14 @@
 
 /* 반응형 디자인 */
 @media (max-width: 768px) {
+  .title-with-blocks-container {
+    width: 100%;
+  }
+
+  .title-container {
+    width: 100%;
+  }
+
   .main-title-sub {
     font-size: 1.5rem;
   }
@@ -113,15 +125,20 @@
 }
 
 @media (max-width: 480px) {
+  .title-with-blocks-container {
+    margin-bottom: 40px;
+    width: 100%;
+  }
+
+  .title-container {
+    width: 100%;
+  }
+
   .main-title-sub {
     font-size: 1.1rem;
   }
 
   .main-title-main {
-    font-size: 3.2rem;
-  }
-
-  .title-with-blocks-container {
-    margin-bottom: 40px;
+    font-size: 2rem;
   }
 }

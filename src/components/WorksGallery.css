@@ -2,17 +2,21 @@
 .works-gallery-container {
   min-height: 100vh;
   min-width: 100%;
+  width: 100%;
   background-image: url("/images/detail_background_image.png");
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
   font-family: "Electrical Safety Regular", sans-serif;
+  box-sizing: border-box;
 }
 
 .works-gallery-content {
   padding: 100px 20px 60px;
   max-width: 1000px;
   margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 /* 작품 그리드 */
@@ -38,11 +42,13 @@
 @media (max-width: 1024px) {
   .works-gallery-container {
     max-width: 900px;
+    width: 100%;
     padding: 80px 15px 50px;
   }
 
   .works-gallery-content {
     padding: 130px 60px 80px;
+    width: 100%;
   }
 
   .works-grid {
@@ -56,12 +62,14 @@
     background-color: #b1e6ff;
     background-image: none;
     max-width: 700px;
+    width: 100%;
     padding: 70px 0 40px;
   }
 
   .works-gallery-content {
     background-image: none;
     padding: 70px 15px 40px;
+    width: 100%;
   }
 
   .works-grid-container {
@@ -70,6 +78,7 @@
     padding: 0;
     border-radius: 0;
     margin: 40px 0 15px;
+    width: 100%;
   }
 
   .works-grid {
@@ -79,18 +88,30 @@
     grid-template-columns: repeat(1, 1fr);
     gap: 15px;
     margin: 40px 0 15px 0;
+    width: 100%;
   }
 }
 
 @media (max-width: 480px) {
   .works-gallery-container {
     max-width: 100%;
+    width: 100%;
     padding: 60px 0 30px;
+  }
+
+  .works-gallery-content {
+    padding: 60px 10px 30px;
+    width: 100%;
+  }
+
+  .works-grid-container {
+    width: 100%;
   }
 
   .works-grid {
     grid-template-columns: repeat(1, 1fr);
     gap: 12px;
     margin: 30px auto 15px;
+    width: 100%;
   }
 }

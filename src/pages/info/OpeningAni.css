@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+.mobile_br {
+  display: none;
+}
+
 /* 상단 히어로 섹션 */
 .hero-section {
   /* font-family: "Electrical Safety Regular"; */
@@ -37,6 +41,7 @@
   color: var(--color-white);
   -webkit-text-stroke: 3px var(--color-info-light);
   text-shadow: 4px 4px 0 var(--color-info-light);
+
   font-weight: bold;
   letter-spacing: 2px;
   margin: 20px 0 30px;
@@ -48,7 +53,6 @@
   font-size: 1.3rem;
   margin-bottom: 0;
   line-height: 1.5;
-  /* -webkit-text-stroke: 0.8px var(--color-white); */
 
   text-shadow: -1px -1px 0 var(--color-white), 1px -1px 0 var(--color-white), -1px 1px 0 var(--color-white),
     1px 1px 0 var(--color-white);
@@ -81,6 +85,7 @@
 
 .dog-character img {
   max-width: 280px;
+  max-height: 280px;
   height: auto;
 }
 
@@ -218,10 +223,15 @@
 
 /* 반응형 디자인 */
 @media (max-width: 768px) {
+  .mobile_br {
+    display: block;
+  }
+
   .hero-section {
     height: 300px;
     background-position: top;
     background-size: 300% auto;
+    margin-top: 50px;
   }
 
   .hero-title {
@@ -242,8 +252,12 @@
     text-shadow: 1px 1px 0 #fff;
   }
 
+  .character-section {
+    padding: 80px 15px;
+  }
+
   .character-container {
-    /* grid-template-columns: 1fr; */
+    grid-template-columns: 1fr 2fr;
     gap: 10px;
     text-align: center;
   }
@@ -264,8 +278,13 @@
     object-fit: cover;
   }
 
+  .character-description p {
+    font-size: 0.95rem;
+  }
+
   .store-content {
     padding: 10px 20px 30px;
+    font-family: "Electrical Safety Bold", "pretendard";
   }
 
   .store-description p {
@@ -273,7 +292,7 @@
   }
 
   .store-section {
-    padding: 30px 15px;
+    padding: 0 15px 40px 15px;
     background-image: none;
   }
 }
@@ -300,7 +319,7 @@
   }
 
   .character-description p {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 
   .store-content {
@@ -319,5 +338,11 @@
 
   .video-container iframe {
     height: 250px;
+  }
+}
+
+@media (max-width: 370px) {
+  .character-description p {
+    font-size: 0.7rem;
   }
 }

@@ -24,6 +24,14 @@
   font-size: 1.4rem;
 }
 
+.pc_br {
+  display: none;
+}
+
+.mobile_br {
+  display: none;
+}
+
 .location-section {
   font-family: "Electrical Safety Regular";
   background-color: #fff;
@@ -37,12 +45,14 @@
   font-size: 1.5rem;
   color: #0f7eda;
   font-weight: bold;
+  margin: 0 0 10px 0;
 }
 
 .address-main {
   font-size: 1.2rem;
   font-weight: bold;
   color: #0f7eda;
+  margin: 0;
 }
 
 .map-container {
@@ -88,8 +98,12 @@
 
   .description-text {
     font-size: 1.1rem;
-    -webkit-text-stroke: 1px #0f7eda;
+
     margin-bottom: 60px;
+  }
+
+  .pc_br {
+    display: block;
   }
 
   .location-section {
@@ -118,8 +132,12 @@
     padding: 10px 10px 30px;
   }
 
+  .mobile_br {
+    display: block;
+  }
+
   .description-text {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     line-height: 1.6;
     margin-bottom: 50px;
   }

@@ -16,7 +16,10 @@ const OpeningAni = () => {
         <div className="hero-content">
           <h3 className="hero-subtitle">2025 opening animation</h3>
           <h1 className="hero-title">어서오세요, 세칸25</h1>
-          <p className="hero-description">"작품을 판매하는 SECAN 편의점의 알바생, '쭈비'의 이야기"</p>
+          <p className="hero-description">
+            "작품을 판매하는 SECAN 편의점의 알바생, <br class="mobile_br" />
+            '쭈비'의 이야기"
+          </p>
         </div>
       </div>
 
@@ -58,13 +61,20 @@ const OpeningAni = () => {
 
             <div className="store-description">
               <p>
-                이번 SECAN 편의점은 창작자의 작품들을 진열하여 판매하는 특별한 편의점입니다.
+                이번 SECAN 편의점은 창작자의 작품들을 <br class="mobile_br" />
+                진열하여 판매하는 특별한 편의점입니다.
                 <br />
-                2025 SECAN의 메인 테마인 '편의점'과 '타이쿤'에 맞춰 알바생 '쭈비'가
+                2025 SECAN의 메인 테마인 '편의점'과
+                <br class="mobile_br" />
+                '타이쿤'에 맞춰 알바생 '쭈비'가
                 <br />
-                편의점을 운영하는 이야기를 담고 있습니다. 점장님 없이 홀로 편의점을 꾸려가는 쭈비의 모습은
+                편의점을 운영하는 이야기를 담고 있습니다.
+                <br class="mobile_br" />
+                점장님 없이 홀로 편의점을 꾸려가는 쭈비의 모습은
                 <br />
-                작품을 완성하고 있는 창작자의 노력을, 그리고 화려하게 작품으로 채워진 전시장은
+                작품을 완성하고 있는 창작자의 노력을,
+                <br class="mobile_br" />
+                그리고 화려하게 작품으로 채워진 전시장은
                 <br />
                 노력하는 과정에서 얻는 완성과 보람을 보여줍니다.
               </p>
