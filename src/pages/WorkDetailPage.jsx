@@ -46,6 +46,7 @@ const WorkDetailPage = () => {
     subtitle: `${work.subtitle} · ${work.genre} | ${work.duration}`,
     description: work.description,
     imageUrl: work.image_url,
+    work_link: work.work_link,
   };
 
   // 작가 정보를 WorkDetail 컴포넌트 형식에 맞게 변환

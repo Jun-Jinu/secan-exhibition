@@ -11,7 +11,12 @@ const WorkDetail = ({ workData, authors = [], backPath = "/" }) => {
 
   const handleDownload = () => {
     // 작품 보러가기 버튼 클릭 시 동작
-    console.log("작품 보러가기 클릭");
+    if (workData?.work_link) {
+      window.open(workData.work_link, "_blank");
+    } else {
+      console.log("작품 링크가 없습니다.");
+      console.log(workData);
+    }
   };
 
   return (
