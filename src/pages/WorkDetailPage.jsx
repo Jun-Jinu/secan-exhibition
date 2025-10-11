@@ -43,7 +43,8 @@ const WorkDetailPage = () => {
   // Supabase 데이터를 WorkDetail 컴포넌트 형식에 맞게 변환
   const workData = {
     title: work.title,
-    subtitle: `${work.subtitle} · ${work.genre} | ${work.duration}`,
+    subtitle: `${work.genre} | ${work.duration}`,
+    // subtitle: `${work.subtitle} · ${work.genre} | ${work.duration}`,
     description: work.description,
     imageUrl: work.image_url,
     work_link: work.work_link,
