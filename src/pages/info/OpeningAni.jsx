@@ -86,7 +86,7 @@ const OpeningAni = () => {
                 <iframe
                   width="100%"
                   height="380px"
-                  src="https://www.youtube.com/embed/Yjp-jXR6K9Q?si=VkkTSbY0ETSxdufu"
+                  src="https://www.youtube.com/embed/ZJjEGp4T2zM"
                   title="SECAN 2025 Opening Animation"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
